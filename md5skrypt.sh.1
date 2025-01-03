@@ -1,0 +1,37 @@
+.TH md5skrypt 1 "24 April 2024" "1.0" "MD5SKRYPT MANUAL"
+.SH NAME
+md5skrypt.sh - script for comparing files and directories based on their MD5 checksum
+.SH SYNOPSIS 
+md5skrypt [\fIoptions\fR] [\fIpath_to_file1\fR] [\fIpath_to_file2\fR]
+.TP
+md5skrypt [\fIoptions\fR] [\fIpath_to_directory1\fR] [\fIpath_to_directory2\fR]
+.SH DESCRIPTION
+md5skrypt compares files and directories based on their MD5 checksums. For files it calculates the checksums and compares them. For directories it hashes the names of all files and subdirectories sorts the list and generates a unique checksum for comparison.
+Users can execute the script with or without parameters. Without them it prompts a dialog window using Zenity for file/directory selection.Otherwise it just compares two given files/directories. Also it gives a warning if files/directories were not found.
+.SH OPTIONS
+-h Displays help for the script
+.TP
+-v Displays the script version
+.SH EXAMPLES
+\fI./md5skrypt.sh\fR - using zenity
+.TP
+\fI./md5skrypt.sh /home/bartek/plik1.txt /home/bartek/plik1txt\fR - using command line for files
+.TP
+\fI./md5skrypt.sh /home/bartek/ /home/bartek/folder/\fR - using command line for directories
+.SH EXIT STATUS
+It returns that comparison was correct or incorrect
+.SH BUGS
+None found for now.
+.SH HISTORY
+MD5 algorithm isn't usually used these days because its not safe, there are chances of collisions occuring. It's better to use SHA-256.
+.SH AUTHOR
+Bartosz Łyskanowski 198051
+.SH COPYRIGHTS
+MIT LICENCE - OPEN SOURCE
+.SH REPORTING BUGS
+My email: s198051@student.pg.edu.pl
+.SH SEE ALSO
+Google "md5sum in Linux"
+.TP
+https://www.geeksforgeeks.org/md5sum-linux-command/
+
