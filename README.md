@@ -1,4 +1,4 @@
-﻿# MD5-file-checker-and-LS-projects
+
 # Porównywanie plików i katalogów na podstawie skrótu MD5
 
 ## Opcje:
@@ -34,7 +34,4 @@ Aby ponownie wykonać skrypt, należy go uruchomić na nowo.
   3. Lista jest sortowana, a następnie tworzony jest unikalny skrót MD5 na jej podstawie.
   4. Skrót jest porównywany z drugim katalogiem.
 
----
-Autor: **[Twoje Imię]**  
-Wersja: **1.0**
 
